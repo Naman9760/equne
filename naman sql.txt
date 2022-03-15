@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+
+namespace quec
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Queue data = new Queue();
+              data.Enqueue("naman");
+            data.Enqueue(12);
+            data.Enqueue('a');
+            data.Enqueue(12.4);
+            data.Enqueue(null);
+            data.Enqueue(true);
+            data.Enqueue(12);
+
+            data.Contains("naman");
+            data.Peek();
+            data.Peek();
+            data.Peek();
+            data.Peek();
+            data.Dequeue();
+            data.Dequeue();
+            data.Dequeue();
+            data.Dequeue();
+            data.Dequeue();
+            data.Dequeue();
+            data.Dequeue();
+          foreach (object i in data)
+            {
+                Console.WriteLine(i);
+            }
+           /* while(data.Count > 0)
+            {
+                Console.WriteLine(data.Dequeue());
+            }*/
+            Console.ReadLine();
+            
+ 
+
+
+       
+
+        }
+    }
+}
